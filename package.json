@@ -1,0 +1,14 @@
+{
+  "name": "FFCParser",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "assert-plus" : "1.0.0"
+  }
+}
