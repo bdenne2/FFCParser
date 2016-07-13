@@ -32,6 +32,7 @@ for(;index <= 7;index++) {
                 var classNameAndDescriptionColumnNumber = $("th:contains('Class')", headerRow).index();
                 var roomColumnNumber = $("th:contains('Room')", headerRow).index();
                 var instructorColumnNumber = $("th:contains('Instructor')", headerRow).index();
+                var date = $("#c_prev_day").parents("h5").text().replace(/<|>/g,'').trim();
 
                 var className, time, room, instructor, description;
 
@@ -52,7 +53,8 @@ for(;index <= 7;index++) {
                         description: description,
                         time: time,
                         room: room,
-                        instructor: instructor
+                        instructor: instructor,
+                        date: date
                     });
                 });
             }
